@@ -158,6 +158,51 @@ PS E:\git-exercise>
 
 
 
-
-
-
+<h1>Bundle 4</h1>
+<h2>Exercise 1</h2>
+PS E:\git-exercise> git checkout main
+Switched to branch 'main'
+PS E:\git-exercise> git remote add git-copy  https://github.com/Kevinemug/new-git.git
+PS E:\git-exercise> git add . 
+[main 3ca22a9] adding new changes to the home page
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS E:\git-exercise> git push origin main
+To https://github.com/Kevinemug/git-cmd.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Kevinemug/git-cmd.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 2.80 KiB | 3.00 KiB/s, done.
+From https://github.com/Kevinemug/git-cmd
+ * branch            main       -> FETCH_HEAD
+   807189c..54207aa  main       -> origin/main
+Merge made by the 'ort' strategy.
+ 1 file changed, 111 insertions(+)
+PS E:\git-exercise> git push origin main
+Enumerating objects: 12, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 697 bytes | 174.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Kevinemug/git-cmd.git
+   54207aa..8df52b2  main -> main
+PS E:\git-exercise> git push git-copy main
+Enumerating objects: 55, done.
+Counting objects: 100% (55/55), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (49/49), done.
+Writing objects: 100% (55/55), 9.73 KiB | 553.00 KiB/s, done.
+Total 55 (delta 17), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (17/17), done.
+To https://github.com/Kevinemug/new-git.git
+ * [new branch]      main -> main
+PS E:\git-exercise> 
